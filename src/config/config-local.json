@@ -1,0 +1,41 @@
+{
+  "App": {
+      "NAME": "FMS",
+      "VERSION": "cache-control"
+  },
+  "PORT":8000,
+  "GRAPHQL":{
+      "API_ENCRYPTION":"Basic",
+      "API_USERNAME":"ext-FMS",
+      "API_PASSWORD":"P@ssw0rd",
+      "API_SOCKET_ENCRYPTION":"Basic",
+      "API_SOCKET_USERNAME":"ext-FMS-socket",
+      "API_SOCKET_PASSWORD":"P@sw0rd-s0ck3t",
+      "API_TOKEN_SECRET_KEY":"S3CR3TK3Y"
+  },
+  "POSTGRES":{
+      "HOST": "10.64.7.142",
+      "PORT": 5678,
+      "DB_NAME": "fms",
+      "USERNAME": "fms_admin",
+      "PASSWORD": "P@ssw0rd.fms.@dm!n"
+  },
+  "MONGODB":{
+      "HOST":"10.64.7.142",
+      "PORT":"4567",
+      "DB_NAME":"fms",
+      "USERNAME":"fms_admin",
+      "PASSWORD":"P4ssw0rd"
+  },
+  "DB_CHAT":{
+      "HOST": "10.64.7.142",
+      "PORT": 3456,
+      "DB_NAME": "fms",
+      "USERNAME": "fms_admin",
+      "PASSWORD": "P@ssw0rd.fms.@dm!n"
+  },
+  "ATTACHMENT":{
+      "UPLOAD_PATH":"/home/xtijktn1901314/work/FMS/temporary-attachment-files"
+  },
+  "PORT_EXPRESS":3000
+}

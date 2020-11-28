@@ -1,0 +1,62 @@
+{
+    "App": {
+        "NAME": "FMS",
+        "PRODUCTION_MODE":"DEV",
+        "VERSION": "cache-control"
+    },
+    "PORT":8000,
+    "GRAPHQL":{
+        "API_ENCRYPTION":"Basic",
+        "API_USERNAME":"ext-FMS",
+        "API_PASSWORD":"P@ssw0rd",
+        "API_SOCKET_ENCRYPTION":"Basic",
+        "API_SOCKET_USERNAME":"ext-FMS-socket",
+        "API_SOCKET_PASSWORD":"P@sw0rd-s0ck3t",
+        "API_TOKEN_SECRET_KEY":"S3CR3TK3Y"
+    },
+    "POSTGRES":{
+        "HOST": "10.64.7.142",
+        "PORT": 5678,
+        "DB_NAME": "fms",
+        "USERNAME": "fms_admin",
+        "PASSWORD": "P@ssw0rd.fms.@dm!n"
+    },
+    "MONGODB":{
+        "HOST":"10.64.7.142",
+        "PORT":"4567",
+        "DB_NAME":"fms",
+        "USERNAME":"fms_admin",
+        "PASSWORD":"P4ssw0rd"
+    },
+    "DB_CHAT":{
+        "HOST": "10.64.7.142",
+        "PORT": 3456,
+        "DB_NAME": "fms",
+        "USERNAME": "fms_admin",
+        "PASSWORD": "P@ssw0rd.fms.@dm!n"
+    },
+    "ATTACHMENT":{
+        "UPLOAD_PATH":"build/attachment-file/"
+    },
+    "DAHUA":{
+        "USERNAME":"system",
+        "PASSWORD":"admin123",
+        "REALM":"DSS",
+        "SRC_IP_ADDR":"192.168.10.252",
+        "DST_IP_ADDR":"http://192.168.10.2",
+        "CLIENT_TYPE":"WINPC_V1"
+    },
+    "SMARTLOCK_SCIENER":{
+        "CLIENT_ID":"439063e312444f1f85050a52efcecd2e",
+        "ACCESS_TOKEN":"be7fe43036d6622b5dab76281ff17140",
+        "API":"api.sciener.com",
+        "LIST_PASSCODE":"/v3/keyboardPwd/get",
+        "ADD_PASSCODE":"https://api.sciener.com/v3/keyboardPwd/add",
+        "CHANGE_PASSCODE":"https://api.sciener.com/v3/keyboardPwd/change",
+        "DELETE_PASSCODE":"https://api.sciener.com/v3/keyboardPwd/delete",
+        "LIST_CARD":"/v3/identityCard/lis",
+        "ADD_CARD":"https://api.sciener.com/v3/identityCard/add",
+        "DELETE_CARD":"https://api.sciener.com/v3/identityCard/delete",
+        "CHANGE_VALIDITY_CARD":"https://api.sciener.com/v3/identityCard/changePeriod"
+    }
+}

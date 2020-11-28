@@ -1,0 +1,60 @@
+{
+  "name": "fms-node-service",
+  "version": "1.0.0",
+  "description": "A README.md file is intended to quickly orient readers to what your project can do.  New to Markdown? [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=524306&clcid=0x409)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node entrypoint.js",
+    "dev": "nodemon entrypoint.js",
+    "lint": "eslint --fix src/",
+    "clean": "rm -rf package-lock.json && rm -rf node_modules/ && npm i",
+    "build": "rm -rf build && babel src -d build && cp -Rf src/config/. build/config/",
+    "build:start": "node build/index.js",
+    "simulate:prod": "npm run build && npm run build:start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://tfs.indikaenergy.co.id/Xapiens/FlatManagementSystem-ext/_git/fms-node-service"
+  },
+  "keywords": [],
+  "author": "PT Xapiens Teknologi Indonesia",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/plugin-transform-async-to-generator": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/plugin-transform-regenerator": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "apollo-server": "^2.14.3",
+    "apollo-server-express": "^2.14.1",
+    "apollo-upload-server": "^7.1.0",
+    "axios": "^0.20.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "eslint": "^7.1.0",
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "fs": "0.0.1-security",
+    "get-video-duration": "^3.0.1",
+    "graphql-yoga": "^1.18.3",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "lodash-joins": "^2.0.3",
+    "md5": "^2.3.0",
+    "moment": "^2.26.0",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.9.28",
+    "multer": "^1.4.2",
+    "pg": "^8.2.1",
+    "querystring": "^0.2.0"
+  }
+}
