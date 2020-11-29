@@ -9,7 +9,7 @@
     "lint": "eslint --fix src/",
     "clean": "rm -rf package-lock.json && rm -rf node_modules/ && npm i",
     "build": "rm -rf build && babel src -d build && cp -Rf src/config/. build/config/",
-    "build:start": "node build/index.js",
+    "build:start": "node enterypoint.js",
     "simulate:prod": "npm run build && npm run build:start"
   },
   "repository": {
