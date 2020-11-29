@@ -1,9 +1,9 @@
 import '@babel/polyfill'
 
 import { ApolloServer, PubSub } from 'apollo-server'
-import typeDefs from './graphql/type-defs'
-import resolvers from './graphql/resolvers'
-import { PORT } from './config/config.json'
+import typeDefs from './src/graphql/type-defs'
+import resolvers from './src/graphql/resolvers'
+import { PORT } from './src/config/config.json'
 // import { checkAuthentication, checkAuthorization } from './auth'
 // import { AuthenticationError } from 'apollo-server-express'
 
