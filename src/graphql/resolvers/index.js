@@ -1,6 +1,5 @@
 import rootQuery from './queries'
 import rootMutation from './mutations'
-import rootSubscription from './subscriptions'
 
 const resolvers = {
   Query:{
@@ -9,8 +8,5 @@ const resolvers = {
   Mutation:{
     ...rootMutation
   },
-  Subscription:{
-    ...rootSubscription
-  }
 }
 export default resolvers

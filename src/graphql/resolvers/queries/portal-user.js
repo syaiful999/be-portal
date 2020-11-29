@@ -9,7 +9,6 @@ const fieldUserView = `
   "id",
   "username",
   "password",
-  "user_account",
   "name",
   "user_photo_1",
   "user_photo_2",

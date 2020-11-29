@@ -6,10 +6,10 @@
     "PORT":1000,
     "GRAPHQL":{
         "API_ENCRYPTION":"Basic",
-        "API_USERNAME":"ext-FMS",
+        "API_USERNAME":"pulee",
         "API_PASSWORD":"P@ssw0rd",
         "API_SOCKET_ENCRYPTION":"Basic",
-        "API_SOCKET_USERNAME":"ext-FMS-socket",
+        "API_SOCKET_USERNAME":"pulee-socket",
         "API_SOCKET_PASSWORD":"P@sw0rd-s0ck3t",
         "API_TOKEN_SECRET_KEY":"S3CR3TK3Y"
     },

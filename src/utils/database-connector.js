@@ -1,6 +1,5 @@
-import { POSTGRES, MONGODB, DB_CHAT } from '../config/config.json'
+import { POSTGRES } from '../config/config.json'
 import { Pool } from 'pg'
-import { connect } from 'mongoose'
 
 const {
   HOST,
