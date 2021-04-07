@@ -3,7 +3,7 @@
         "NAME": "FMS",
         "VERSION": "cache-control"
     },
-    "PORT":1000,
+    "PORT":8000,
     "GRAPHQL":{
         "API_ENCRYPTION":"Basic",
         "API_USERNAME":"pulee",
