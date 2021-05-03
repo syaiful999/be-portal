@@ -1,6 +1,6 @@
 {
     "App": {
-        "NAME": "FMS",
+        "NAME": "BE",
         "VERSION": "cache-control"
     },
     "PORT":8000,
@@ -16,12 +16,12 @@
     "POSTGRES":{
         "HOST": "localhost",
         "PORT": 5432,
-        "DB_NAME": "me",
+        "DB_NAME": "my-proj",
         "USERNAME": "postgres",
         "PASSWORD": "root"
     },
     "ATTACHMENT":{
-        "UPLOAD_PATH":"C:/Pulee/file-attachment/"
+        "UPLOAD_PATH":"/home/sahmad/Project/My-Project/file-attachment/"
     },
     "PORT_EXPRESS":3000
 }

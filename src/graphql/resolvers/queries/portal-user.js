@@ -9,7 +9,7 @@ const fieldUserView = `
   "id",
   "username",
   "password",
-  "name",
+  "fullname",
   "user_photo_1",
   "user_photo_2",
   "is_active",
@@ -17,6 +17,7 @@ const fieldUserView = `
   "created_date",
   "modified_by",
   "modified_date"
+  "is_special_access"
 `
 
 const portalUserQueryResolvers = {
@@ -63,8 +64,8 @@ const portalUserQueryResolvers = {
       throw new Error(e)
     }
   },
-  v_portal_users: async (_parent, { skip, take, filter, sort, must_active = true }) => {
-    let query = `select ${fieldUserView} from v_portal_user `
+  portal_users: async (_parent, { skip, take, filter, sort, must_active = true }) => {
+    let query = `select * from v_portal_user `
     let countQuery = 'select count(id) as total from v_portal_user '
     if (filter) {
       query += whereGenerator.filter({ ...filter })
