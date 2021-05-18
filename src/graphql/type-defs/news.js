@@ -43,7 +43,7 @@ const news = `
   }
   extend type Mutation {
     create_news(data:input_news_model!):cms_news_model!
-    update_news(data:input_video_streaming_model!, id:Int!):cms_news_model!
+    update_news(data:input_news_model!, id:Int!):cms_news_model!
   }
 `
 export default news

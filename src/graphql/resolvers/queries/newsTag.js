@@ -9,7 +9,7 @@ const newsTagsQuery = {
       query += whereGenerator.filter({ ...filter })
       countQuery += whereGenerator.filter({ ...filter })
     }
-    if(must_active && !most_used) {
+    if(must_active) {
       const isActiveQueryString = (filter ? '' : 'where 1=1 ') + ' and "is_active" = true'
       query += isActiveQueryString
       countQuery += isActiveQueryString
